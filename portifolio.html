@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thisal Chamodya</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
+  <!-- Header -->
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#image-slider">Moments</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h1>Hi, I'm Thisal Chamodya</h1>
+    <p>Intern Software Engineer @VisionEx Digital</p>
+    <a href="#projects" class="cta">View My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>Who is Thisal ?</h2>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 30px; padding: 40px;">
+      <!-- Profile Image -->
+      <div style="flex: 1;">
+          <img src="my.jpg" alt="Your Photo" style="border-radius: 50%; width: 100%; max-width: 400px; height: auto; object-fit: cover; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); transition: transform 0.3s ease;">
+      </div>
+      <!-- About Text -->
+      <div style="flex: 2; max-width: 700px; text-align: left; font-size: 1.1rem; line-height: 1.8; color: #f1f1f1; background: rgba(0, 0, 0, 0.6); padding: 20px 30px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);">
+          <h3 style="font-size: 2rem; color: #00d4ff; font-weight: 600; margin-bottom: 20px;">Hello! I'm Thisal Chamodya</h3><hr>
+          <p>
+            Motivated and self-driven <strong><u>Software Developer </u> </strong>with a passion for building efficient and scalable web applications 
+            using <strong><u>React, Spring Boot, and MongoDB</u> </strong>. Always eager <strong><u>to learn and improve, with strong problem-solving skills and 
+            a love for teamwork</u> </strong>. Enjoys taking on challenges, whether leading a project or supporting a team to achieve great results.
+          </p>
+          <br></br>
+          <p>
+              I also enjoy collaborating with creative teams and helping businesses turn their ideas into reality through innovative technology.
+              Let's create something amazing together!
+          </p>
+      </div>
+  </div>
+  
+  
+</section>
+
+
+
+ <!-- Projects Section -->
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+      <button id="scroll-left" class="scroll-btn">◀</button>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Blog Platform</h3><hr>
+          <p>Still Working on this. Coming soon.</p><p>Last Updated : 2025.03.31</p>
+          <a href="#" target="_blank">View Project</a>
+      </div>
+          <div class="project-card">
+              <h3><a href="https://lostcarfinding.netlify.app/" target="_blank">Lost Car Finder</a></h3><hr>
+              <p>This lost car finding system enables users to register their vehicles, report
+                them as stolen, and alert the community for assistance. Stolen car details
+                appear in a dedicated notification section. The platform
+                ensures a structured approach to theft reporting and recovery, enhancing
+                community support and awareness.</p>
+              <p><u>Tech Stack</u> : <strong>React | Sprinboot | MongoDB | JWT | AWS | Netlify</strong></p>
+              <p><u>Tools</u> : <strong>Docker | Postman | Git</strong></p>
+              <a href="https://github.com/Thisal0714/Car-Lost-Finder-BackEnd.git" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+              <h3>Car Rental Service</h3><hr>
+              <p>This web-based car rental platform features an intuitive UI backed for data management. Users can
+                browse, book vehicles, and manage reservations, while admins oversee
+                vehicles, bookings, and customer details. Key features include a dynamic
+                search, secure login, and a user-friendly booking system.</p>
+                <p><u>Tech Stack</u> : <strong>HTML | CSS | JavaScript | Php | MySql | Netlify</strong></p>
+                <p><u>Tools</u> : <strong>Xampp | Git | Scratch</strong></p>
+              <a href="https://github.com/Thisal0714/Car-Rental-Service.git" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3><a href="https://thisal0714.github.io/Arithmetic-Calculator/">Arithmetic Calculator</a></h3><hr>
+            <p>An Arithmetic Calculator website allows users to perform basic mathematical operations like 
+              addition, subtraction, multiplication, and division efficiently. 
+              With a simple user-friendly interface, it helps users solve calculations instantly, 
+              making it a handy tool for students, professionals, and anyone needing quick math solutions. </p>
+              <p><u>Tech Stack</u> : <strong>HTML | CSS | JavaScript | Github Pages</strong></p>
+              <p><u>Tools</u> : <strong>Xampp | Git | Scratch</strong></p>
+            <a href="https://github.com/Thisal0714/Arithmetic-Calculator.git" target="_blank">View Project</a>
+        </div>
+          <div class="project-card">
+              <h3>Coming Soon</h3>
+              <p>Wanna Collaberate ?. <a href="#contact"><u><strong>Click here to contact Thisal.</strong></u></a></p>
+              <!-- <a href="#" target="_blank">View Project</a> -->
+          </div>
+          <!-- <div class="project-card">
+              <h3>Project 6</h3>
+              <p>A brief description of the project.</p>
+              <a href="#" target="_blank">View Project</a>
+          </div> -->
+      </div>
+      <button id="scroll-right" class="scroll-btn">▶</button>
+  </div>
+</section>
+
+
+<div class="container">
+  <h2 class="topic">Tech & Tool Stack</h2>
+
+  <div class="stack-section">
+      <h3>Tech Stack</h3>
+      <ul class="tech-stack">
+          <li>
+              <span class="tech-name">Frontend</span><br>
+              <span class="tech-description">React JS | Angular | HTML | CSS | JavaScript </span>
+              <div class="percentage-bar">
+                  <div class="percentage-fill"></div>
+              </div>
+          </li>
+          <li>
+              <span class="tech-name">Backend</span><br>
+              <span class="tech-description">Spring Boot | Php | Golang | C# | Java</span>
+              <div class="percentage-bar">
+                  <div class="percentage-fill"></div>
+              </div>
+          </li>
+          <li>
+              <span class="tech-name">Database</span><br>
+              <span class="tech-description">MongoDB | MySQL | Oracle Database | PostgreSQL</span>
+              <div class="percentage-bar">
+                  <div class="percentage-fill"></div>
+              </div>
+          </li>
+          <li>
+            <span class="tech-name">Software Architecture & Design Patterns</span><br>
+            <span class="tech-description">
+                SRP | OCP | Factory Patters | epository Pattern 
+            </span>
+            <div class="percentage-bar">
+                <div class="percentage-fill"></div>
+            </div>
+            
+          </li>
+          <li>
+              <span class="tech-name">Hosting</span><br>
+              <span class="tech-description">AWS | Vercel | Netlify | Github Pages | Docker Hub</span>
+              <div class="percentage-bar">
+                  <div class="percentage-fill"></div>
+              </div>
+          </li>
+      </ul>
+  </div>
+
+  <div class="stack-section">
+      <h3>Tool Stack</h3>
+      <ul style="display: flex; justify-content: center; flex-wrap: wrap;">
+          <li class="circle-container">
+              <div class="progress-circle">
+                  <svg>
+                      <circle class="background" cx="50%" cy="50%" r="40" />
+                      <circle class="fill" cx="50%" cy="50%" r="40" />
+                  </svg>
+                  <div class="circle">
+                      <span class="tech-name">Git</span>
+                  </div>
+              </div>
+          </li>
+          <li class="circle-container">
+              <div class="progress-circle">
+                  <svg>
+                      <circle class="background" cx="50%" cy="50%" r="40" />
+                      <circle class="fill" cx="50%" cy="50%" r="40" />
+                  </svg>
+                  <div class="circle">
+                      <span class="tech-name">GitHub</span>
+                  </div>
+              </div>
+          </li>
+          <li class="circle-container">
+              <div class="progress-circle">
+                  <svg>
+                      <circle class="background" cx="50%" cy="50%" r="40" />
+                      <circle class="fill" cx="50%" cy="50%" r="40" />
+                  </svg>
+                  <div class="circle">
+                      <span class="tech-name">Docker</span>
+                  </div>
+              </div>
+          </li>
+          <li class="circle-container">
+              <div class="progress-circle">
+                  <svg>
+                      <circle class="background" cx="50%" cy="50%" r="40" />
+                      <circle class="fill" cx="50%" cy="50%" r="40" />
+                  </svg>
+                  <div class="circle">
+                      <span class="tech-name">Kubernetes</span>
+                  </div>
+              </div>
+          </li>
+          <li class="circle-container">
+              <div class="progress-circle">
+                  <svg>
+                      <circle class="background" cx="50%" cy="50%" r="40" />
+                      <circle class="fill" cx="50%" cy="50%" r="40" />
+                  </svg>
+                  <div class="circle">
+                      <span class="tech-name">Compass</span>
+                  </div>
+              </div>
+          </li>
+
+          <li class="circle-container">
+            <div class="progress-circle">
+                <svg>
+                    <circle class="background" cx="50%" cy="50%" r="40" />
+                    <circle class="fill" cx="50%" cy="50%" r="40" />
+                </svg>
+                <div class="circle">
+                    <span class="tech-name">Postman</span>
+                </div>
+            </div>
+        </li>
+
+        <li class="circle-container">
+          <div class="progress-circle">
+              <svg>
+                  <circle class="background" cx="50%" cy="50%" r="40" />
+                  <circle class="fill" cx="50%" cy="50%" r="40" />
+              </svg>
+              <div class="circle">
+                  <span class="tech-name">Swagger</span>
+              </div>
+          </div>
+      </li>
+
+      <li class="circle-container">
+        <div class="progress-circle">
+            <svg>
+                <circle class="background" cx="50%" cy="50%" r="40" />
+                <circle class="fill" cx="50%" cy="50%" r="40" />
+            </svg>
+            <div class="circle">
+                <span class="tech-name">AWS</span>
+            </div>
+        </div>
+    </li>
+
+    <li class="circle-container">
+      <div class="progress-circle">
+          <svg>
+              <circle class="background" cx="50%" cy="50%" r="40" />
+              <circle class="fill" cx="50%" cy="50%" r="40" />
+          </svg>
+          <div class="circle">
+              <span class="tech-name">Azure</span>
+          </div>
+      </div>
+  </li>
+
+  <li class="circle-container">
+    <div class="progress-circle">
+        <svg>
+            <circle class="background" cx="50%" cy="50%" r="40" />
+            <circle class="fill" cx="50%" cy="50%" r="40" />
+        </svg>
+        <div class="circle">
+            <span class="tech-name">JWT</span>
+        </div>
+    </div>
+</li>
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">npm</span>
+      </div>
+  </div>
+</li>
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Yarn</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Maven</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">VS Code</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Intellij</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Atom</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Pheonix Code</span>
+      </div>
+  </div>
+</li>
+
+<li class="circle-container">
+  <div class="progress-circle">
+      <svg>
+          <circle class="background" cx="50%" cy="50%" r="40" />
+          <circle class="fill" cx="50%" cy="50%" r="40" />
+      </svg>
+      <div class="circle">
+          <span class="tech-name">Bootstrap</span>
+      </div>
+  </div>
+</li>
+      </ul>
+  </div>
+</div>
+
+
+<section id="image-slider" class="slider-container">
+    <h2>Moments</h2>
+    <div class="slider-wrapper">
+        <div class="slide active"><img src="image1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="image2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="image3.jpg" alt="Slide 3"></div>
+    </div>
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+</section>
+
+<style>
+  #image-slider {
+      padding: 60px 20px;
+      background: #2d2d2d;
+      text-align: center;
+    }
+    .slider-container {
+
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        padding-bottom: 30px;
+    }
+
+    .slider-container h2{
+      margin-bottom: 50px;
+    }
+    .slider-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+        min-width: 100%;
+        transition: opacity 0.5s;
+    }
+    .slide img {
+        width: 60%;
+        border-radius: 10px;
+    }
+    .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    .prev { left: 10px; }
+    .next { right: 10px; }
+</style>
+
+<script>
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".slide");
+
+    function showSlide(index) {
+        if (index >= slides.length) { currentIndex = 0; }
+        else if (index < 0) { currentIndex = slides.length - 1; }
+        else { currentIndex = index; }
+        
+        slides.forEach((slide, i) => {
+            slide.style.display = i === currentIndex ? "block" : "none";
+        });
+    }
+    
+    function moveSlide(n) {
+        showSlide(currentIndex + n);
+    }
+    
+    function autoSlide() {
+        moveSlide(1);
+        setTimeout(autoSlide, 3000);
+    }
+    
+    document.addEventListener("DOMContentLoaded", () => {
+        showSlide(currentIndex);
+        setTimeout(autoSlide, 3000);
+    });
+</script>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="mailto:thisalchamodya123@gmail.com" method="POST" enctype="text/plain">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+  
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>Connect with me on 
+      <a href="https://www.linkedin.com/in/thisal-liyanaarachchi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>, 
+      <a href="https://github.com/Thisal0714">GitHub</a>, or 
+      <a href="#">Twitter</a>.</p>
+  </footer>
+
+  <script>
+    // Scroll Progress Bar
+    const progressBar = document.getElementById('scroll-progress');
+
+    window.addEventListener('scroll', () => {
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight; // Total scrollable height
+      const scrollPosition = window.scrollY; // Current scroll position
+      const scrollPercent = (scrollPosition / scrollHeight) * 100;
+      progressBar.style.width = scrollPercent + '%';
+    });
+    document.querySelectorAll('nav ul li a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+
+  </script>
+  <script>
+    const projectsGrid = document.querySelector(".projects-grid");
+    const scrollLeft = document.getElementById("scroll-left");
+    const scrollRight = document.getElementById("scroll-right");
+
+    scrollLeft.addEventListener("click", () => {
+        projectsGrid.scrollBy({ left: -300, behavior: "smooth" });
+    });
+
+    scrollRight.addEventListener("click", () => {
+        projectsGrid.scrollBy({ left: 300, behavior: "smooth" });
+    });
+</script>
+
+
+  <!-- Download Resume Button -->
+  <a class="download-resume" href='resume.pdf' download="Thisal_Chamodya_CV">
+    <i class="fas fa-arrow-down"></i>
+  </a>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- Scroll to Top Button -->
+<button id="scroll-to-top" class="scroll-btn">↑</button>
+<script> scrollToTopButton = document.getElementById('scroll-to-top');
+
+window.addEventListener('scroll', () => {
+  // Show or hide the button depending on scroll position
+  if (window.scrollY > 200) {
+    scrollToTopButton.classList.add('show');
+  } else {
+    scrollToTopButton.classList.remove('show');
+  }
+});
+
+// Scroll to top when clicked
+scrollToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+</script>
+
+</body>
+</html>
