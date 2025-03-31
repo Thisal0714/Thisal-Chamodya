@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech & Tool Stack</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .stack-section {
+            margin-top: 20px;
+        }
+        .stack-section h3 {
+            color: #444;
+            border-bottom: 2px solid #6c63ff;
+            padding-bottom: 5px;
+        }
+        .tech-stack {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Align items vertically */
+            align-items: center; /* Align tech stack to the left */
+        }
+        .tech-stack li {
+            width: 80%; /* Full width for tech stack items */
+            margin: 10px 0;
+            background: #e7e9fc;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+        .tech-stack li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .percentage-bar {
+            width: 100%;
+            background: #d0d0d0;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        .percentage-fill {
+            width: 95%; /* Fill percentage */
+            height: 10px; /* Height of the filled bar */
+            background: #6c63ff;
+            border-radius: 5px;
+        }
+        .circle-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center circles */
+            margin: 10px; /* Margin for spacing */
+        }
+        .circle {
+            width: 75px; /* Circle diameter */
+            height: 75px; /* Circle diameter */
+            background: #e7e9fc;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            z-index: 1; /* Ensure circle is above the progress */
+        }
+        .circle:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        .tech-name {
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            z-index: 1; /* Ensure text is above background */
+        }
+        .tech-description {
+            color: #666;
+            font-size: 0.9em;
+            text-align: center;
+            z-index: 1; /* Ensure text is above background */
+        }
+        /* Circular Progress Bar Styles */
+        .progress-circle {
+            position: relative;
+            width: 95px; /* Circle diameter */
+            height: 95px; /* Circle diameter */
+            overflow: hidden;
+            display: flex; /* Center the SVG */
+            align-items: center;
+            justify-content: center;
+            z-index: 0; /* Behind the circle */
+        }
+        .progress-circle svg {
+            transform: rotate(-90deg); /* Rotate to start from the top */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .progress-circle circle {
+            fill: transparent;
+            stroke-width: 10;
+        }
+        .progress-circle .background {
+            stroke: #d0d0d0; /* Background color */
+        }
+        .progress-circle .fill {
+            stroke: #6c63ff; /* Fill color */
+            stroke-dasharray: 251.2; /* Circumference (approx) */
+            stroke-dashoffset: 67; /* 95% of 251.2 */
+            transition: stroke-dashoffset 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Tech & Tool Stack</h2>
+
+    <div class="stack-section">
+        <h3>Tech Stack</h3>
+        <ul class="tech-stack">
+            <li>
+                <span class="tech-name">Frontend</span><br>
+                <span class="tech-description">React.js</span>
+                <div class="percentage-bar">
+                    <div class="percentage-fill"></div>
+                </div>
+            </li>
+            <li>
+                <span class="tech-name">Backend</span><br>
+                <span class="tech-description">Spring Boot</span>
+                <div class="percentage-bar">
+                    <div class="percentage-fill"></div>
+                </div>
+            </li>
+            <li>
+                <span class="tech-name">Database</span><br>
+                <span class="tech-description">MongoDB</span>
+                <div class="percentage-bar">
+                    <div class="percentage-fill"></div>
+                </div>
+            </li>
+            <li>
+                <span class="tech-name">Authentication</span><br>
+                <span class="tech-description">JWT & OAuth</span>
+                <div class="percentage-bar">
+                    <div class="percentage-fill"></div>
+                </div>
+            </li>
+            <li>
+                <span class="tech-name">Hosting</span><br>
+                <span class="tech-description">AWS & Vercel</span>
+                <div class="percentage-bar">
+                    <div class="percentage-fill"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="stack-section">
+        <h3>Tool Stack</h3>
+        <ul style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <li class="circle-container">
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="background" cx="50%" cy="50%" r="40" />
+                        <circle class="fill" cx="50%" cy="50%" r="40" />
+                    </svg>
+                    <div class="circle">
+                        <span class="tech-name">Version Control</span>
+                    </div>
+                </div>
+            </li>
+            <li class="circle-container">
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="background" cx="50%" cy="50%" r="40" />
+                        <circle class="fill" cx="50%" cy="50%" r="40" />
+                    </svg>
+                    <div class="circle">
+                        <span class="tech-name">IDE</span>
+                    </div>
+                </div>
+            </li>
+            <li class="circle-container">
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="background" cx="50%" cy="50%" r="40" />
+                        <circle class="fill" cx="50%" cy="50%" r="40" />
+                    </svg>
+                    <div class="circle">
+                        <span class="tech-name">CI/CD</span>
+                    </div>
+                </div>
+            </li>
+            <li class="circle-container">
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="background" cx="50%" cy="50%" r="40" />
+                        <circle class="fill" cx="50%" cy="50%" r="40" />
+                    </svg>
+                    <div class="circle">
+                        <span class="tech-name">Containerization</span>
+                    </div>
+                </div>
+            </li>
+            <li class="circle-container">
+                <div class="progress-circle">
+                    <svg>
+                        <circle class="background" cx="50%" cy="50%" r="40" />
+                        <circle class="fill" cx="50%" cy="50%" r="40" />
+                    </svg>
+                    <div class="circle">
+                        <span class="tech-name">Project Mgmt</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
